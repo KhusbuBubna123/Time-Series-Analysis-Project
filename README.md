@@ -54,7 +54,7 @@ Dec 1905        |       1     |        0       236266
 
 <img width="1515" height="745" alt="graph-Sarima" src="https://github.com/user-attachments/assets/ff4a63de-acce-42b2-8094-002a0d492b41" />
 
-We have also compared differenet model in terms of Mean Absoulute Error and Root Mean Square Error \
+We have also compared different model in terms of Mean Absolute Error and Root Mean Square Error \
 
                           Rank      MAE     RMSE  MAPE
 Holt-Winters Additive        1    86.70   123.45   inf. \
@@ -64,3 +64,13 @@ Simple Exp Smoothing         4   209.83   337.22   inf. \
 LSTM                         5   209.93   341.94   inf  \
 ARIMA(2,1,1)                 6   211.37   329.26   inf \
 auto_ARIMA(2, 0, 0)          7   218.59   340.71   inf. \
+LightGBM                     8   220.13   296.63   inf. \
+Light GBM                    9   220.13   296.63   inf. \
+SARIMA(0,1,0)(0,1,0)[12]    10  3023.06  5429.27   inf. \
+SARIMA(1,1,1)(0,1,1)[12]    11  3023.06  5429.27   inf. \
+auto_SARIMA                 12  3023.06  5429.27   inf. \
+
+The best model among all these models is Holt-Winters Additive  model which gives the least Mean Absolute Error(86.70) is  (with Mean Absolute Error = 86.70%) and also gives the least Root Mean Square Error(RMSE) 
+of 123.45  (Root Mean Square Error 123.45).
+
+
